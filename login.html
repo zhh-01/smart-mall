@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="登录寻羽小市，查看你的个人中心。" />
+    <title>登录 | 寻羽小市</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="account-page">
+    <header class="site-header">
+      <a class="brand" href="index.html#top" aria-label="返回寻羽小市首页"><img src="assets/logo.png" alt="寻羽小市" /></a>
+      <nav class="main-nav" aria-label="页面导航">
+        <a href="index.html">首页</a>
+        <a href="products.html">全部商品</a>
+        <a href="messages.html">消息中心</a>
+        <a class="active" href="login.html">登录</a>
+      </nav>
+      <div class="header-actions"><a class="home-link" href="index.html">返回首页</a></div>
+    </header>
+    <main class="auth-layout">
+      <section class="auth-art" aria-label="寻羽小市生活方式选品">
+        <img src="assets/story.svg" alt="阳光照进温暖的生活空间" />
+        <span>WELCOME<br /><b>TO XUNYU</b></span>
+      </section>
+      <section class="auth-panel" aria-labelledby="login-title">
+        <p class="eyebrow">YOUR EVERYDAY EDIT</p>
+        <h1 id="login-title">欢迎回来。</h1>
+        <p class="auth-intro">登录后管理你的订单，收藏喜欢的日常好物。</p>
+        <form id="login-form">
+          <label for="username">用户名</label>
+          <input id="username" name="username" type="text" autocomplete="username" placeholder="输入你的用户名" required />
+          <label for="password">密码</label>
+          <input id="password" name="password" type="password" autocomplete="current-password" placeholder="输入密码" required minlength="4" />
+          <p class="form-error" id="login-error" role="alert"></p>
+          <button class="checkout-button" type="submit">登录寻羽小市 <span>→</span></button>
+        </form>
+        <div class="login-options" aria-label="账户操作">
+          <a href="register.html">注册账号</a>
+          <a href="forgot-password.html">忘记密码</a>
+          <a href="code-login.html">验证码登录</a>
+        </div>
+        <div class="login-divider"><span>其他登录方式</span></div>
+        <div class="social-login" aria-label="第三方登录方式">
+          <button class="social-button wechat-login" id="wechat-login" type="button"><span class="social-icon">微</span>微信登录</button>
+          <button class="social-button qq-login" id="qq-login" type="button"><span class="social-icon">Q</span>QQ 登录</button>
+        </div>
+      </section>
+    </main>
+    <script src="auth-page.js"></script>
+  </body>
+</html>

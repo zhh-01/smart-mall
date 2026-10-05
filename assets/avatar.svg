@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" role="img" aria-labelledby="title desc">
+  <title id="title">寻羽小市用户头像</title>
+  <desc id="desc">暖色背景上的简约人物头像</desc>
+  <rect width="120" height="120" fill="#e9bd55"/>
+  <circle cx="60" cy="44" r="22" fill="#292826"/>
+  <path d="M22 112c3-29 18-45 38-45s35 16 38 45" fill="#e46850"/>
+  <path d="M45 43c2-15 9-24 20-24 10 0 17 7 20 19-10-5-25-5-40 5Z" fill="#77736c"/>
+</svg>

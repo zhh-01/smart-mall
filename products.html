@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="寻羽小市全部在售商品列表。" />
+    <title>全部商品 | 寻羽小市</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="catalog-page">
+    <header class="site-header">
+      <a class="brand" href="index.html#top" aria-label="返回寻羽小市首页"><img src="assets/logo.png" alt="寻羽小市" /></a>
+      <nav class="main-nav" aria-label="主导航">
+        <a href="index.html#products">本周精选</a>
+        <a class="active" href="products.html">全部商品</a>
+        <a href="messages.html">消息中心</a>
+        <a id="account-link" href="login.html">登录</a>
+      </nav>
+      <div class="header-actions">
+        <a class="home-link" href="index.html">返回首页</a>
+        <button class="bag-button" id="bag-toggle" aria-label="打开购物袋">购物袋 <span id="bag-count">0</span></button>
+        <button class="avatar-button" id="avatar-toggle" aria-label="打开用户导航" aria-expanded="false"><img src="assets/avatar.svg" alt="用户头像" /></button>
+      </div>
+    </header>
+    <aside class="account-drawer" id="account-drawer" aria-label="用户导航">
+      <div class="drawer-head"><h2>用户导航</h2><button id="account-close" aria-label="关闭用户导航">×</button></div>
+      <div class="account-drawer-body">
+        <img class="account-drawer-avatar" src="assets/avatar.svg" alt="当前用户头像" />
+        <p class="eyebrow">MY SPACE</p>
+        <strong id="account-greeting">欢迎来到寻羽小市</strong>
+        <a class="account-drawer-link" href="profile.html">个人中心 <span>→</span></a>
+        <a class="account-drawer-link" id="account-login-link" href="login.html">登录账户 <span>→</span></a>
+        <button class="account-drawer-link account-logout" id="account-logout">退出登录 <span>→</span></button>
+      </div>
+    </aside>
+    <div class="account-overlay" id="account-overlay"></div>
+
+    <main>
+      <section class="catalog-intro">
+        <p class="eyebrow">THE FULL EDIT · <span id="product-count">0</span> ITEMS</p>
+        <h1>全部商品</h1>
+        <p>按购买热度和上新时间整理，慢慢挑选属于你的日常好物。</p>
+      </section>
+      <section class="catalog-toolbar" aria-label="商品排序与筛选">
+        <div class="catalog-filters">
+          <button class="catalog-filter active" data-filter="全部">全部</button>
+          <button class="catalog-filter" data-filter="家居">居家</button>
+          <button class="catalog-filter" data-filter="穿搭">穿搭</button>
+          <button class="catalog-filter" data-filter="香氛">香氛</button>
+          <button class="catalog-filter" data-filter="器物">器物</button>
+        </div>
+        <label class="sort-control">排序
+          <select id="sort-select">
+            <option value="popular">购买最多</option>
+            <option value="latest">最新上架</option>
+          </select>
+        </label>
+      </section>
+      <section class="catalog-section" aria-labelledby="catalog-heading">
+        <div class="catalog-meta"><h2 id="catalog-heading">正在上架</h2><span id="visible-count">0 / 0</span></div>
+        <div class="catalog-grid" id="catalog-grid"></div>
+        <div class="catalog-loader" id="catalog-loader"><span class="loader-dot"></span>下滑加载更多商品</div>
+        <p class="catalog-end" id="catalog-end">已经看到全部上架商品</p>
+      </section>
+    </main>
+
+    <aside class="bag-drawer" id="bag-drawer" aria-label="购物袋">
+      <div class="drawer-head"><h2>你的购物袋</h2><button id="bag-close" aria-label="关闭购物袋">×</button></div>
+      <div class="bag-items" id="bag-items"><div class="empty-bag">还没有喜欢的东西。<br />去逛逛，也许会遇见它。</div></div>
+      <div class="drawer-foot"><div><span>合计</span><strong id="bag-total">¥0</strong></div><button class="checkout-button">去结算 <span>→</span></button></div>
+    </aside>
+    <div class="drawer-overlay" id="drawer-overlay"></div>
+    <div class="toast" id="toast" role="status">已加入购物袋</div>
+    <script src="products.js"></script>
+    <script src="auth.js"></script>
+    <script src="products-page.js"></script>
+  </body>
+</html>

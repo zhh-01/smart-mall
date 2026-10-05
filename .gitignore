@@ -1,0 +1,5 @@
+users.json
+.env
+node_modules/
+server.js.bak
+cloudflared.exe

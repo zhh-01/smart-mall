@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 800" role="img" aria-labelledby="title desc">
+  <title id="title">桌面上的生活器物</title>
+  <desc id="desc">暖色背景上的陶瓷杯和花瓶插画</desc>
+  <rect width="1000" height="800" fill="#d8c7b2"/>
+  <circle cx="760" cy="160" r="130" fill="#e9bd55"/>
+  <path d="M0 590 Q250 500 500 580 T1000 540 V800 H0Z" fill="#b98f6e"/>
+  <path d="M205 330h205l-25 270H230Z" fill="#f7f5f0"/>
+  <ellipse cx="307" cy="330" rx="103" ry="25" fill="#e5ded2"/>
+  <path d="M410 395q125-20 115 90-10 80-105 35" fill="none" stroke="#f7f5f0" stroke-width="28"/>
+  <path d="M610 190h130l-18 350H628Z" fill="#eeeee8"/>
+  <ellipse cx="675" cy="190" rx="65" ry="17" fill="#d0c2b1"/>
+  <path d="M675 190c-20-95 15-155 38-190M665 190c-65-70-52-128-40-165" fill="none" stroke="#64745a" stroke-width="14" stroke-linecap="round"/>
+</svg>

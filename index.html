@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="寻羽小市，一家为日常挑选好物的生活方式商城。" />
+    <title>寻羽小市 | 日常好物研究所</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="寻羽小市首页"><img src="assets/logo.png" alt="寻羽小市" /></a>
+      <nav class="main-nav" aria-label="页面导航">
+        <a class="active" href="index.html">首页</a>
+        <a href="products.html">全部商品</a>
+        <a href="messages.html">消息中心</a>
+        <a id="account-link" href="login.html">登录</a>
+      </nav>
+      <div class="header-actions">
+        <button class="icon-button" id="search-toggle" aria-label="打开搜索">⌕</button>
+        <button class="bag-button" id="bag-toggle" aria-label="打开购物袋">购物袋 <span id="bag-count">0</span></button>
+        <button class="avatar-button" id="avatar-toggle" aria-label="打开用户导航" aria-expanded="false"><img src="assets/avatar.svg" alt="用户头像" /></button>
+      </div>
+    </header>
+    <aside class="account-drawer" id="account-drawer" aria-label="用户导航">
+      <div class="drawer-head"><h2>用户导航</h2><button id="account-close" aria-label="关闭用户导航">×</button></div>
+      <div class="account-drawer-body">
+        <img class="account-drawer-avatar" src="assets/avatar.svg" alt="当前用户头像" />
+        <p class="eyebrow">MY SPACE</p>
+        <strong id="account-greeting">欢迎来到寻羽小市</strong>
+        <a class="account-drawer-link" href="profile.html">个人中心 <span>→</span></a>
+        <a class="account-drawer-link" id="account-login-link" href="login.html">登录账户 <span>→</span></a>
+        <button class="account-drawer-link account-logout" id="account-logout">退出登录 <span>→</span></button>
+      </div>
+    </aside>
+    <div class="account-overlay" id="account-overlay"></div>
+    <nav class="secondary-nav" aria-label="首页内容导航">
+      <span class="secondary-label"><img src="assets/logo.png" alt="寻羽小市" /></span>
+      <a class="active" href="#products">本周精选</a>
+      <a href="#categories">生活方式</a>
+      <a href="#story">关于寻羽</a>
+    </nav>
+    <div class="search-panel" id="search-panel">
+      <label for="search-input">搜索你喜欢的东西</label>
+      <input id="search-input" type="search" placeholder="试试“香氛”或“杯子”" />
+      <button id="search-close" aria-label="关闭搜索">×</button>
+    </div>
+
+    <main id="top">
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="eyebrow">THE EVERYDAY EDIT · 2024</p>
+          <h1 id="hero-title">把日子，<br /><i>过得更有意思。</i></h1>
+          <p class="hero-intro">我们在生活的细节里寻找灵感，<br />挑选那些让每一天都值得期待的小物。</p>
+          <a class="primary-link" href="#products">探索本周精选 <span>↗</span></a>
+        </div>
+        <div class="hero-art" aria-label="一组精心挑选的生活好物">
+          <div class="sun-disc"></div>
+          <img src="assets/hero.svg" alt="桌面上的陶瓷杯与花瓶" />
+          <span class="art-note note-top">NEW ARRIVALS<br /><b>01 / 06</b></span>
+          <span class="art-note note-bottom">拾起日常<br /><b>MAKE IT YOURS</b></span>
+        </div>
+      </section>
+
+      <section class="category-strip" id="categories" aria-label="商品分类">
+        <span class="strip-label">SHOP BY MOOD</span>
+        <div class="category-list">
+          <button class="category active" data-category="全部">全部 <small>60</small></button>
+          <button class="category" data-category="家居">居家 <small>15</small></button>
+          <button class="category" data-category="穿搭">穿搭 <small>15</small></button>
+          <button class="category" data-category="香氛">香氛 <small>15</small></button>
+          <button class="category" data-category="器物">器物 <small>15</small></button>
+        </div>
+        <a class="view-all" id="view-all" href="products.html">查看全部 <span>→</span></a>
+      </section>
+
+      <section class="products-section" id="products">
+        <div class="section-heading">
+          <div><p class="eyebrow">CURATED FOR YOU</p><h2>本周，值得带回家的</h2></div>
+          <p class="heading-aside">每一件都经过认真挑选<br />希望它能成为你生活的一部分。</p>
+        </div>
+        <div class="product-carousel" id="product-carousel" aria-label="精选商品轮播">
+          <button class="carousel-control carousel-prev" id="carousel-prev" aria-label="上一个商品">←</button>
+          <div class="carousel-track" id="carousel-track"></div>
+          <button class="carousel-control carousel-next" id="carousel-next" aria-label="下一个商品">→</button>
+          <div class="carousel-dots" id="carousel-dots" aria-label="选择轮播商品"></div>
+        </div>
+        <div class="product-grid" id="product-grid"></div>
+      </section>
+
+      <section class="story" id="story">
+        <div class="story-image"><img src="assets/story.svg" alt="阳光照进温暖的生活空间" /></div>
+        <div class="story-copy"><p class="eyebrow">A LITTLE NOTE</p><h2>好东西不必<br /><i>喧哗。</i></h2><p>从一只杯子、一盏灯，到下班后点起的香。我们相信，真正长久的喜欢，藏在那些被反复使用的日常里。</p><a class="text-link" href="#top">读读我们的故事 <span>↗</span></a></div>
+      </section>
+    </main>
+
+    <aside class="bag-drawer" id="bag-drawer" aria-label="购物袋">
+      <div class="drawer-head"><h2>你的购物袋</h2><button id="bag-close" aria-label="关闭购物袋">×</button></div>
+      <div class="bag-items" id="bag-items"><div class="empty-bag">还没有喜欢的东西。<br />去逛逛，也许会遇见它。</div></div>
+      <div class="drawer-foot"><div><span>合计</span><strong id="bag-total">¥0</strong></div><button class="checkout-button">去结算 <span>→</span></button></div>
+    </aside>
+    <div class="drawer-overlay" id="drawer-overlay"></div>
+    <div class="toast" id="toast" role="status">已加入购物袋</div>
+    <script src="products.js"></script>
+    <script src="auth.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>

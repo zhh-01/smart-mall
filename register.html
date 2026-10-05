@@ -1,0 +1,14 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>注册账号 | 寻羽小市</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="account-page">
+    <header class="site-header"><a class="brand" href="index.html#top" aria-label="返回寻羽小市首页"><img src="assets/logo.png" alt="寻羽小市" /></a><nav class="main-nav" aria-label="页面导航"><a href="index.html">首页</a><a href="products.html">全部商品</a><a href="messages.html">消息中心</a><a class="active" href="login.html">登录</a></nav><div class="header-actions"><a class="home-link" href="index.html">返回首页</a></div></header>
+    <main class="auth-single-layout"><section class="auth-panel"><p class="eyebrow">CREATE YOUR ACCOUNT</p><h1>注册账号</h1><p class="auth-intro">创建账号，收藏并管理你的日常好物。</p><form id="register-form"><label for="register-username">用户名</label><input id="register-username" type="text" placeholder="设置用户名" required minlength="2" /><label for="register-password">密码</label><input id="register-password" type="password" placeholder="至少 4 位密码" required minlength="4" /><p class="form-error" id="register-error" role="alert"></p><button class="checkout-button" type="submit">注册并登录 <span>→</span></button></form><a class="auth-back-link" href="login.html">返回登录</a></section></main>
+    <script src="register.js"></script>
+  </body>
+</html>

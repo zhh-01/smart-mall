@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="寻羽小市消息中心。" />
+    <title>消息中心 | 寻羽小市</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="messages-page">
+    <header class="site-header">
+      <a class="brand" href="index.html#top" aria-label="返回寻羽小市首页"><img src="assets/logo.png" alt="寻羽小市" /></a>
+      <nav class="main-nav" aria-label="页面导航">
+        <a href="index.html">首页</a>
+        <a href="products.html">全部商品</a>
+        <a class="active" href="messages.html">消息中心</a>
+        <a id="account-link" href="login.html">登录</a>
+      </nav>
+      <div class="header-actions"><a class="home-link" href="index.html">返回首页</a><a class="avatar-button" href="profile.html" aria-label="进入个人中心"><img src="assets/avatar.svg" alt="用户头像" /></a></div>
+    </header>
+    <main class="messages-layout">
+      <section class="messages-heading">
+        <div><p class="eyebrow">YOUR INBOX</p><h1>消息中心</h1></div>
+        <p>和喜欢的人聊聊，也接收来自寻羽小市的最新动态。</p>
+      </section>
+      <section class="message-shell" aria-label="消息中心">
+        <aside class="conversation-panel">
+          <div class="conversation-header"><h2>会话</h2><span id="unread-count">0</span></div>
+          <label class="message-search"><span>⌕</span><input id="conversation-search" type="search" placeholder="搜索会话" /></label>
+          <div class="conversation-list" id="conversation-list"></div>
+        </aside>
+        <section class="chat-panel" aria-label="聊天窗口">
+          <div class="chat-header"><div><strong id="chat-name">寻羽小市</strong><p id="chat-status">在线</p></div><span id="chat-category">服务消息</span></div>
+          <div class="chat-messages" id="chat-messages"></div>
+          <form class="message-composer" id="message-form"><input id="message-input" type="text" placeholder="输入消息..." autocomplete="off" /><button type="submit" aria-label="发送消息">发送 <span>→</span></button></form>
+        </section>
+      </section>
+    </main>
+    <script src="auth.js"></script>
+    <script src="messages.js"></script>
+  </body>
+</html>
