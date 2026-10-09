@@ -1,5 +1,5 @@
 <!doctype html>
 <html lang="zh-CN">
-  <head><meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" /><title>登录中 | 寻羽小市</title><link rel="stylesheet" href="styles.css" /></head>
+  <head><meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" /><title>登录中 | 寻羽小市</title><link rel="stylesheet" href="css/styles.css" /></head>
   <body class="account-page"><main class="auth-single-layout"><section class="auth-panel"><p class="eyebrow">AUTHENTICATED</p><h1>登录成功</h1><p class="auth-intro">正在进入个人中心...</p></section></main><script>const user = JSON.parse(new URLSearchParams(location.search).get("user") || "null"); if (user) { localStorage.setItem("smartMallUser", JSON.stringify({ ...user, loginAt: new Date().toISOString() })); location.replace("profile.html"); } else { location.replace("login.html?oauth_error=授权结果缺失"); }</script></body>
 </html>
